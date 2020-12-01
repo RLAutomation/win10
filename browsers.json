@@ -3,39 +3,36 @@
         "default":"latest",
         "versions":{
             "latest":{
-                "image":"selenoid/chrome:86.0",        
-                "port":"4444",
+                "image":["C:\\tools\\drivers\\chromedriver.exe","--log-level=DEBUG"],
                 "path":"/"
             }
         }
     },
     "MicrosoftEdge":{
-        "default":"88.0",
+        "default":"latest",
         
         "versions":{
-            "88.0":{
-                "image":"browsers/edge:88.0",
-                "port":"4444",
+            "latest":{
+                "image":["C:\\tools\\drivers\\msedgedriver.exe","--log-level=DEBUG"],
                 "path":"/"
             }
         }
     },
     "firefox":{
-        "default":"83.0",
+        "default":"latest",
         
         "versions":{
-            "83.0":{
-                "image":"selenoid/firefox:83.0",
-                "port":"4444",
-                "path":"/wd/hub"
+            "latest":{
+                "image":["C:\\tools\\drivers\\geckodriver.exe","--log=debug"]
             }
         }
     },
-    "safari": {
-        "default": "latest",
-        "versions": {
-            "latest": {
-                    "image": ["/usr/bin/safaridriver"]
+    "internet explorer":{
+        "default":"latest",
+        
+        "versions":{
+            "latest":{
+                "image":["C:\\tools\\drivers\\IEDriverServer.exe","--log-level=DEBUG"]
             }
         }
     }
